@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CarZone - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Base */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #1e5eff;
+            color: white;
+        }
+
+        .navbar .logo h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links li a {
+            color: rgb(236, 226, 226);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .nav-links li a:hover {
+            color: #ffdd00;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #e6f0ff, #ffffff);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            color: #1e5eff;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            color: #555;
+            margin: 20px 0 40px;
+        }
+
+        .hero button {
+            padding: 20px 50px;
+            font-size: 20px;
+            background-color: #1e5eff;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #a90808;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 40px;
+            background-color: #f5f9fc;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 36px;
+            color: #1e5eff;
+            margin-bottom: 50px;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .testimonial-card {
+            background: rgb(233, 215, 215);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .stars {
+            color: #f4c430;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #080808;
+        }
+
+        .testimonial-card h4 {
+            margin-top: 15px;
+            color: #830707;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 50px;
+            }
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">
+        <h1>Welcome to CarZone</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Buy Your Dream Car</h1>
+    <p>"Where quality cars meet happy owners"</p>
+    <a href="cars.html"><button>Explore Cars</button></a>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Amazing service and smooth buying experience."</p>
+            <h4>– Rahul S.</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p>"Friendly staff and transparent pricing."</p>
+            <h4>– Ananya M.</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;
+
+            </div>
+            <p>"Found my dream car in just one day!"</p>
+            <h4>– Vikram K.</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Highly recommended for first-time buyers."</p>
+            <h4>– Priya N.</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Great quality cars at reasonable prices."</p>
+            <h4>– Arjun P.</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Best car buying platform I’ve used."</p>
+            <h4>– Sneha R.</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Quick process and excellent support."</p>
+            <h4>– Rohit B.</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p>"Trustworthy and professional service."</p>
+            <h4>– Kavya D.</h4>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

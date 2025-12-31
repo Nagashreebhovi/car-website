@@ -1,0 +1,593 @@
+/* =========================
+   HOME PAGE
+========================= */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.home-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #b6cceb; /* blue */
+    position: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.home-navbar .logo {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.home-navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.home-navbar ul li {
+    margin-right: 15px;
+}
+
+.home-navbar ul li a {
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.home-navbar ul li a:hover,
+.home-navbar ul li a.active {
+    background-color: #161616;
+}
+
+/* Hero Section */
+.home-hero {
+    height: 100vh; /* full screen */
+    background-color: #040404; /* blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red(177, 91, 91);
+    padding-top: 10px; /* for navbar */
+}
+
+.home-hero .hero-text h1 {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.home-hero .hero-text p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.home-hero button {
+    padding: 30px 30px;
+    font-size: 26px;
+    background-color: rgb(171, 32, 32);
+    color: #f0280e;
+    border: 20;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.home-hero button:hover {
+    background-color: #d65b09f3;
+    color: rgb(235, 16, 16);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-hero .hero-text h1 {
+        font-size: 22px;
+          text-align: center;
+    }
+    .home-hero .hero-text p {
+        font-size: 18px;
+          text-align: center;
+    }
+    .home-navbar ul li a {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+}body {
+  background-color: rgb(176, 176, 237);
+  margin: 0;
+  height: 100vh;
+}
+.home-text {
+    text-align: center;       /* horizontal center */
+}
+/* Ensure the page takes full screen */
+html, body {
+    height: 100%;
+    margin: 10;
+}
+
+/* Center the text container */
+.home-text {
+    display: flex;             /* makes it flexible */
+    flex-direction: column;    /* stack items vertically */
+    justify-content: center;   /* vertical center */
+    align-items: center;       /* horizontal center */
+    min-height: 100vh;         /* full screen height */
+    text-align: center;        /* center text */
+    background-color: #0d6efd; /* blue background */
+    color: white;              /* text color */
+    padding: 20px;
+}
+
+/* Optional: style the button */
+.home-text button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #0d6efd;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* =========================
+   CARS PAGE
+========================= */
+.cars-section {
+    padding: 30px;
+}
+
+.car-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.car-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.car-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.car-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.car-info h3 {
+    margin-bottom: 6px;
+}
+
+.car-info .price {
+    font-size: 14px;
+    color: #333;
+}
+/* Make all images responsive and normal size */
+img {
+    width: 100%;      /* image fills container width */
+    max-width: 600px; /* maximum width of image */
+    height: auto;     /* maintain aspect ratio */
+    display: block;
+    margin: 0 auto;   /* center the image horizontally */
+}
+
+/* Hero section background image */
+.hero {
+    background: url('images/your-car.jpg') no-repeat center center;
+    background-size: cover; /* scale to fill section without stretching */
+    height: 100vh;          /* full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Optional: hero text on top of background image */
+.hero h1 {
+    font-size: 80px;
+    color: #1e5eff;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #555;
+    margin: 20px 0 40px 0;
+}
+
+.hero a button {
+    padding: 20px 50px;
+    font-size: 20px;
+    background-color: #1e5eff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero a button:hover {
+    background-color: #ffdd00;
+    color: #1e5eff;
+}
+/* =========================
+   VIEW DETAILS BUTTON
+========================= */
+.view-btn {
+    padding: 8px 16px;
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.view-btn:hover {
+    background-color: #084298;
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #111;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   ABOUT PAGE STYLING - FIXED
+========================= */
+ 
+/* ABOUT SECTION */
+.about-section {
+    min-height: 100vh; /* full screen height */
+    padding: 80px 20px;
+    background: linear-gradient(to right, #e6f0ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CONTAINER */
+.about-container {
+    max-width: 1200px;
+    width: 100%;              /* ✅ FIXED (was 550%) */
+    background: rgba(208, 204, 204, 0.95);
+    padding: 60px 40px;
+    border-radius: 20px;
+}
+
+/* TITLE */
+.about-container h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* INTRO TEXT */
+.about-intro {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto 50px;
+    color: #242323;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* CONTENT GRID */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* BOXES */
+.about-box {
+    background-color: #1b1a1a;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(230, 94, 94, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(220, 118, 118, 0.15);
+}
+
+.about-box h2 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #f4eeeb;
+}
+
+.about-box p {
+    font-size: 15px;
+    color: #f9f7f7;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .about-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        padding: 40px 20px;
+    }
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page-bg {
+  min-height: 10vh;
+  background-color: #0d6efd; /* blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RECTANGLE BOX */
+.contact-rectangle {
+  background-color: white;
+  width: 580px;          /* rectangle width */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* HEADINGS */
+.contact-rectangle h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 12px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #2e2f30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #084298;
+}
+
+/* SUCCESS MESSAGE */
+#successMessage {
+  display: none;
+  color: rgb(135, 7, 7);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* LOCATION & SOCIAL */
+.location {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #191a19;
+  font-weight: bold;
+}
+/* =========================
+   CAR DETAILS PAGE
+========================= */
+.car-details-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.car-details-card {
+    background-color: #fff;
+    width: 800px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Car Image */
+.car-details-card img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Car Name */
+.car-details-card h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Price */
+.car-details-card .price {
+    font-size: 20px;
+    color: #1c1b1b;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Features */
+.car-details-card .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.car-details-card .features li {
+    list-style: disc inside;
+    font-size: 16px;
+    text-align: left;
+}
+.car-details-card .features li {
+    list-style: disc inside;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Arial', sans-serif; /* font style added */
+    font-weight: 500;                 /* medium weight */
+    font-style: normal;               /* normal style */
+    color: #1a1a1a;                   /* text color */
+}
+.book-now-nav {
+    background-color: #0d6efd;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.book-now-nav:hover {
+    background-color: #084298;
+}
+.testimonials {
+  padding: 50px 20px;
+  background: #f5f9fc;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #1e73be;
+  margin-bottom: 30px;
+}
+
+.testimonial-slider {
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-card {
+  display: block ;
+  background: rgb(230, 125, 125);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stars {
+  color: #f4c430;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  color: #333;
+}
