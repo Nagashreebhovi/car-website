@@ -32,6 +32,7 @@
             list-style: none;
             display: flex;
             gap: 25px;
+            align-items: center;
         }
 
         .nav-links li a {
@@ -43,6 +44,18 @@
 
         .nav-links li a:hover {
             color: #ffdd00;
+        }
+
+        /* Feedback button in navbar */
+        .feedback-nav {
+            background-color: #286ffd;
+            color: #fafbfb !important;
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+
+        .feedback-nav:hover {
+            background-color: rgb(57, 28, 188);
         }
 
         /* Hero Section */
@@ -111,7 +124,7 @@
         }
 
         .stars {
-            color: #f4c430;
+            color: #f6f6ee;
             font-size: 20px;
             margin-bottom: 15px;
         }
@@ -147,9 +160,12 @@
     </div>
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
         <li><a href="cars.html">Cars</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <!-- ✅ FEEDBACK BUTTON ADDED -->
+        <li><a href="feedback.html" class="feedback-nav">Feedback</a></li>
     </ul>
 </header>
 
@@ -164,60 +180,33 @@
 <section class="testimonials">
     <h2>What Our Customers Say</h2>
 
-    <div class="testimonial-grid">
+    <!-- EXISTING + NEW FEEDBACK WILL LOAD HERE -->
+    <div class="testimonial-grid" id="testimonials">
 
+        <!-- Existing testimonials (kept as default) -->
         <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="stars">★★★★★</div>
             <p>"Amazing service and smooth buying experience."</p>
             <h4>– Rahul S.</h4>
         </div>
 
         <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <div class="stars">★★★★☆</div>
             <p>"Friendly staff and transparent pricing."</p>
             <h4>– Ananya M.</h4>
         </div>
 
         <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;
-
-            </div>
+            <div class="stars">★★★★★</div>
             <p>"Found my dream car in just one day!"</p>
             <h4>– Vikram K.</h4>
         </div>
 
-        <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"Highly recommended for first-time buyers."</p>
-            <h4>– Priya N.</h4>
-        </div>
-
-        <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"Great quality cars at reasonable prices."</p>
-            <h4>– Arjun P.</h4>
-        </div>
-
-        <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"Best car buying platform I’ve used."</p>
-            <h4>– Sneha R.</h4>
-        </div>
-
-        <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"Quick process and excellent support."</p>
-            <h4>– Rohit B.</h4>
-        </div>
-
-        <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-            <p>"Trustworthy and professional service."</p>
-            <h4>– Kavya D.</h4>
-        </div>
-
     </div>
 </section>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
 
 </body>
 </html>
